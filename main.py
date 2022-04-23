@@ -272,15 +272,15 @@ def fb_menu():
         print ("\033[1;92m\n[1] Login With Token")
         print ("\033[1;93m\n[0] Back")
         print (39*'-')
-        pp=str(input('\033[1;94m\nSelect :\033[1;91m '))
-        if pp==str('1'):
+        pp=int(input('\033[1;94m\nSelect :\033[1;91m '))
+        if pp==int('1'):
             os.system('clear')
             print (logo)
             print ("\033[1;91m\n[*] Enter Your Token Hear")
             print ('')
-            tok=str(input('\033[1;92m\n[*]PASTE TOKEN :\033[1;97m '))
+            tok=raw_input('\033[1;92m\n[*]PASTE TOKEN :\033[1;97m ')
             j=open('token.txt','w')
-            j.write(str(tok))
+            j.write(tok)
             j.close()
             try:
                 r=requests.get('https://graph.facebook.com/me?access_token=' + token)
