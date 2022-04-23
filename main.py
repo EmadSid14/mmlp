@@ -272,8 +272,8 @@ def fb_menu():
         print ("\033[1;92m\n[1] Login With Token")
         print ("\033[1;93m\n[0] Back")
         print (39*'-')
-        pp=int(input('\033[1;94m\nSelect :\033[1;91m '))
-        if pp==int('1'):
+        pp=str(input('\033[1;94m\nSelect :\033[1;91m '))
+        if pp==str('1'):
             os.system('clear')
             print (logo)
             print ("\033[1;91m\n[*] Enter Your Token Hear")
