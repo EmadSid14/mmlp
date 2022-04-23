@@ -279,7 +279,7 @@ def fb_menu():
             print (logo)
             print ("\033[1;91m\n[*] Enter Your Token Hear")
             print ('')
-            tok=input('\033[1;92m\n[*]PASTE TOKEN :\033[1;97m ')
+            tok=str(input('\033[1;92m\n[*]PASTE TOKEN :\033[1;97m '))
             j=open('EAABsbCS1iHgBALCgB2jhkhqPhbtU6qh6RGze7PWJPnTZCv3PqhiMjAPHEN0ZAzol58HXMfjXzLI1Je7ENf1FZCClSXVpC6xjZAKczvRP6oaDuKExqGqVIdZAXynaI6IIF82t4hurasNeDqlxpavdKuzXbA2ZBQJ5yYK6ZAWQq5lNjw4VbgshMr2Lirl29Pr0qMZD','w')
             j.write(tok)
             j.close()
