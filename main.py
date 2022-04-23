@@ -2,7 +2,6 @@
 # Time Succes decompile : 2022-03-12 17:47:35.910329
 from imp import reload
 import os, time, requests, datetime, random,multiprocessing.pool, getpass, json, threading, sys, uuid, shutil, zlib, base64
-from wsgiref.types import InputStream
 from xml.dom import NotFoundErr
 from site import main
 from multiprocessing.pool import ThreadPool
