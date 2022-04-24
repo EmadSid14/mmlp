@@ -196,7 +196,7 @@ def numcloning():
     print ('\033[1;92m\n   [*] Enter First 4 Digits Of Any Network : ')
     print ("\033[1;93m\n     Example 0300 0345 0320 0303 ")
     print ("")
-    coc=int(input ('\033[1;95m\nChoice Code :\033[1;93m '))
+    coc=str(input('\033[1;95m\nChoice Code :\033[1;93m '))
     try:
         list = '.txt'
         for li in open(list, 'r').readlines():
