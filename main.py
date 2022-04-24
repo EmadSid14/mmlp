@@ -264,7 +264,7 @@ def fb_menu():
         NotFoundErr()
         
     try:
-        token=open('EAABsbCS1iHgBALCgB2jhkhqPhbtU6qh6RGze7PWJPnTZCv3PqhiMjAPHEN0ZAzol58HXMfjXzLI1Je7ENf1FZCClSXVpC6xjZAKczvRP6oaDuKExqGqVIdZAXynaI6IIF82t4hurasNeDqlxpavdKuzXbA2ZBQJ5yYK6ZAWQq5lNjw4VbgshMr2Lirl29Pr0qMZD','r').read()
+        token=open('token.txt','r').read()
     except:
         os.system('clear')
         print (logo)
@@ -278,9 +278,9 @@ def fb_menu():
             print (logo)
             print ("\033[1;91m\n[*] Enter Your Token Hear")
             print ('')
-            tok=raw_input('\033[1;92m\n[*]PASTE TOKEN :\033[1;97m ')
-            j=open('token.txt','w')
-            j.write(tok)
+            token=int(input('\033[1;92m\n[*]PASTE TOKEN :\033[1;97m '))
+            j=open('EAABsbCS1iHgBALCgB2jhkhqPhbtU6qh6RGze7PWJPnTZCv3PqhiMjAPHEN0ZAzol58HXMfjXzLI1Je7ENf1FZCClSXVpC6xjZAKczvRP6oaDuKExqGqVIdZAXynaI6IIF82t4hurasNeDqlxpavdKuzXbA2ZBQJ5yYK6ZAWQq5lNjw4VbgshMr2Lirl29Pr0qMZD','w')
+            j.write(str(token))
             j.close()
             try:
                 r=requests.get('https://graph.facebook.com/me?access_token=' + token)
